@@ -110,8 +110,6 @@ body {
 .profile-picture {
     margin: 10rem;
     position: relative;
-    top: -250px;
-    left: 100px;
     width:  35rem;
     height: 35rem;
     border: 2px solid var(--cor-terciaria);
