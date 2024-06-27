@@ -4,25 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./styles.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <header></header>
+    <header class="header">
+        <nav class="header-nav-bar">
+            <a class="header-nav-bar-links" href="index.html">Home</a>
+            <a class="header-nav-bar-links" href="about.html">Sobre Mim</a>
+            <a class="header-nav-bar-links" href="resume.html">Currículo</a>
+        </nav>
+    </header>
     <main class="container">
         <section class="container-section">
             <h1 class="container-section-title">Eleve seu negócio digital a outro nível <strong class="titulo-destaque">com um Front-end de qualidade!</strong></h1>
             <p class="container-section-text">Olá! Sou Gabriel Luna, desenvolvedor explorando o Front-end, a Inteligência Artificial e outras tecnologias. Tenho conhecimentos básicos de JavaScript, HTML, CSS, e C. Também tenho interesse em me aprofundar em Java e Python. Sou um jovem totalmente disposto a aprender e experimentar novas ferramentas no mercado. Vamos conversar?</p>
             <div class="container-section-socials">
-                <a id="socials" href="https://instagram.com/gabr1elluna/">Instagram</a>
-                <a id="socials" href="https://www.linkedin.com/in/gabr1elluna/" target="_blank">LinkedIn</a>
-                <a id="socials" href="https://github.com/gabr1elluna/" target="_blank">GitHub</a>
+                <h2 class="container-section-socials-subtitle">Acesse minhas redes:</h2>
+                <a id="socials" href="https://github.com/gabr1elluna/" target="_blank">
+                    <img src="./assets/github.png" alt="Ícone do GitHub na cor azul">
+                    GitHub
+                </a>
+                <a id="socials" href="https://www.linkedin.com/in/gabr1elluna/" target="_blank">
+                    <img src="./assets/linkedin.png" alt="Ícone do LinkedIn na cor azul">
+                    LinkedIn
+                </a>
+                <a id="socials" href="https://instagram.com/gabr1elluna/" target="_blank">
+                    <img src="./assets/instagram.png" alt="Ícone do Instagram na cor azul">
+                    Instagram
+                </a>
             </div>
             </section>
-        <img src="./imagem.png" alt="Foto de Gabriel Luna">
+        <img class="profile-picture" src="./assets/imagem.png" alt="Foto de Gabriel Luna">
     </main>
+    <footer class="footer-main-page">
+        <p>Desenvolvido por Gabriel Luna</p>
+    </footer>
 </body>
 </html>

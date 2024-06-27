@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+:root {
+    --cor-primaria: #000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22d4fd;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--cor-secundaria);
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom, var(--cor-primaria), #696969);
+}
+
+.header {
+    padding: 2% 0 0 15%; /*Ao usar 4 valores no padding, a ordem dos valores afetados são: top, right, bottom, left*/
+}
+
+.header-nav-bar{
+    display: flex;
+    gap: 80px;
+}
+
+.header-nav-bar-links {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.header-nav-bar-links:hover {
+    transition: transform 1.2s ease;
+    transform: scale(1.69);
+}
+
+.container {
+    padding: 5% 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.container-section {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container-section-title {
+    font-size: 2.3rem;
+    font-family: var(--fonte-primaria);
+}
+
+.container-section-text {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.container-section-socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.container-section-socials-subtitle {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+#socials {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 378px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--cor-terciaria);
+    margin: 1rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+}
+
+#socials:hover {
+    background-color: var(--cor-hover);
+    transition: 0.5s ease;
+}
+
+.profile-picture {
+    margin: 10rem;
+    position: relative;
+    top: -250px;
+    left: 100px;
+    width:  35rem;
+    height: 35rem;
+    border: 2px solid var(--cor-terciaria);
+}
+
+.footer-main-page {
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px){
+    .header {
+        padding: 10%;
+    }
+
+    .header-nav-bar{
+        justify-content: center;
+    }
+    
+    .container{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .container-section{
+        width: auto;
+    }
+}
